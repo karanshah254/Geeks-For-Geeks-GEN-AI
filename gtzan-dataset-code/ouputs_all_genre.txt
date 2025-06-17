@@ -1,0 +1,29 @@
+| Genre     | Precision | Recall | F1-Score | Support |
+| --------- | --------- | ------ | -------- | ------- |
+| Blues     | 0.47      | 0.45   | 0.46     | 20      |
+| Classical | 0.86      | 0.90   | 0.88     | 20      |
+| Country   | 0.44      | 0.40   | 0.42     | 20      |
+| Disco     | 0.40      | 0.50   | 0.44     | 20      |
+| Hiphop    | 0.39      | 0.45   | 0.42     | 20      |
+| Jazz      | 0.54      | 0.65   | 0.59     | 20      |
+| Metal     | 0.68      | 0.65   | 0.67     | 20      |
+| Pop       | 0.67      | 0.70   | 0.68     | 20      |
+| Reggae    | 0.67      | 0.60   | 0.63     | 20      |
+| Rock      | 0.50      | 0.30   | 0.38     | 20      |
+
+
+Test Accuracy: 0.56
+
+
+🎵 Genre-Wise Observations:
+| Genre | Analysis                                                                                                                                                     
+|**Classical**| Very high performance — the model finds classical music easy to identify, likely due to its unique features like lack of drums or consistent instruments.|
+|**Metal, Pop, Reggae**| Good results — likely due to distinctive rhythm and instrumentation (e.g., heavy guitar in metal).|                                                    
+|**Blues, Country, Disco, Hiphop, Rock**| Poor performance — model struggles here, possibly due to overlapping characteristics in rhythm, instruments, or vocals|
+| **Rock**|Worst recall (0.30) — many actual rock tracks were misclassified as other genres.                                                             
+
+
+Observations & Analysis
+- Overall Accuracy: 56%
+- This means that 112 out of 200 test samples were correctly predicted.
+- Given that random guessing would give ~10% (1 out of 10), this shows the model has learned something meaningful, but still struggles with some genres.
